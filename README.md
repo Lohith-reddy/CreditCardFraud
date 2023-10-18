@@ -68,5 +68,4 @@ i.e. maximise the fraud detection while minimising false positives
 If we draw a vertical line at any threshold point we get the relevant fraud detection accuracy and the cost (false detection rate)
 
 Since we are sensitive to fraud detection, we might want to capture a lot more fraud cases.
-looking at the graphs 2.8 seems like a good number
-
+looking at the graphs 2.8 seems like a good number.
