@@ -73,8 +73,10 @@ Since we are sensitive to fraud detection, we might want to capture a lot more f
 looking at the graphs 2.8 seems like a good number.
 
 
-![image-1](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/716fa464-db93-4a62-9143-e847d0082902)
+![image-1](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/ffce46bd-aa9d-4e7d-844f-10994e681a0c)
+
 
 ### results with iForest
 
-![image](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/5fec20d6-806b-47dc-bf0e-379343fa30b4)
+![image](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/81be3d0d-456e-4db9-aecb-bc766de8fc75)
+
