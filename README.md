@@ -76,8 +76,6 @@ looking at the graphs 2.8 seems like a good number.
 
 ### results with iForest
 
-![image](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/5fec20d6-806b-47dc-bf0e-379343fa30b4)
-
-![Alt text](image-2.png)
+![image-3](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/03a8abdd-4a8e-452d-8e64-1cfdf1a3a45d)
 
 Though iForest seems to do a good job, it doesn't provide flexibility that autoencoders do. One cannot prioritise fraud detection over false-positives.
