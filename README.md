@@ -5,7 +5,9 @@ Class Imbalance: 99.82 - o.18
 ## preprocessing
 
 Feature_engineering
+
     added the following variables
+
         'is_round' - derived from the decimal value of Amount - intuition "fraudster might prefer round number or stay away from round numbers. both will be reflected in the Amount variable"
 
     log_amount - p1log transformation of amount variable to get it to normal distribution
@@ -17,7 +19,6 @@ Rest of the variables are masked and hence couldn't be creative with them
 During initial analyses frauds seems to come in clusters with big spaces in between
 
 ![fraud_hm](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/106b8aae-ef30-482a-b7ee-fecb1d003fde)
-
 
 Moving average of frauds across Time
 
