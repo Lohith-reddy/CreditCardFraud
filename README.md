@@ -1,6 +1,6 @@
 # Credit Card Fraud Anamoly detection
 
-Class Imbalance: 99.82 - o.18
+Class Imbalance: 99.82 - 0.18
 
 ## preprocessing
 
@@ -72,8 +72,9 @@ If we draw a vertical line at any threshold point we get the relevant fraud dete
 Since we are sensitive to fraud detection, we might want to capture a lot more fraud cases.
 looking at the graphs 2.8 seems like a good number.
 
-![Alt text](image.png)
+
+![image-1](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/716fa464-db93-4a62-9143-e847d0082902)
 
 ### results with iForest
 
-![Alt text](image-1.png)
+![image](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/5fec20d6-806b-47dc-bf0e-379343fa30b4)
