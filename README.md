@@ -50,16 +50,15 @@ mixed-sampling - challenge is model learns a different distribution than the act
 
 Autoencoders don't need oversampling as they don't look at minority class.
 
-For isolation forest, oversampling might be counter-productive as the model tries to isolate anamolies. When spatial based imputing is done, it effectively means points are added near to other anamolies making it difficult for the isolation forest to isolate the points. Dimensionality reduction might be a good idea.
+For isolation forest, oversampling might be counter-productive as the model tries to isolate anamolies. When spatial based imputing is done, it effectively means points are added near to other anamolies making it difficult for the isolation forest to isolate the points. However, dimensionality reduction might be a good idea. t-SNE is a good option.
 
 One-class SVM might be a good idea after a feature reduction step through t-SNE or UMAP. Oversampling is needed.
 
 Training a neural network with equal distibution at first and later moving to actual distribution is a decent idea. However, it is not my first choice right now. It's worth trying it but I wouldn't bet on it over others
 
-Results with Autoencoder
+### Results with Autoencoder
 
 ![loss_ae](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/41f6fd4d-ec32-4dda-83c5-eb1a69b08eaf)
-
 
 Ideally the thresh should be determined from the training data results
 It should be selected in such a way that most of the fraud cases are caught while still keeping the false positives to a minimum.
@@ -72,3 +71,9 @@ If we draw a vertical line at any threshold point we get the relevant fraud dete
 
 Since we are sensitive to fraud detection, we might want to capture a lot more fraud cases.
 looking at the graphs 2.8 seems like a good number.
+
+![Alt text](image.png)
+
+### results with iForest
+
+![Alt text](image-1.png)
