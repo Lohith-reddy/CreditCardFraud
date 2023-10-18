@@ -16,7 +16,8 @@ Rest of the variables are masked and hence couldn't be creative with them
 
 During initial analyses frauds seems to come in clusters with big spaces in between
 
-![Alt text](fraud_hm.png)
+![fraud_hm](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/106b8aae-ef30-482a-b7ee-fecb1d003fde)
+
 
 Moving average of frauds across Time
 
@@ -56,14 +57,15 @@ Training a neural network with equal distibution at first and later moving to ac
 
 Results with Autoencoder
 
-![Alt text](loss_ae.png)
+![loss_ae](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/41f6fd4d-ec32-4dda-83c5-eb1a69b08eaf)
+
 
 Ideally the thresh should be determined from the training data results
 It should be selected in such a way that most of the fraud cases are caught while still keeping the false positives to a minimum.
 
 i.e. maximise the fraud detection while minimising false positives
 
-![Alt text](threshold_chart.png)
+![threshold_chart](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/e8365eea-b6c7-4a55-8a6a-a3e33720a476)
 
 If we draw a vertical line at any threshold point we get the relevant fraud detection accuracy and the cost (false detection rate)
 
