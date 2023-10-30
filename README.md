@@ -6,11 +6,11 @@ Class Imbalance: 99.82 - 0.18
 
 Feature_engineering
 
-    added the following variables
+added the following variables
 
-        'is_round' - derived from the decimal value of Amount - intuition "fraudster might prefer round number or stay away from round numbers. both will be reflected in the Amount variable"
+'is_round' - derived from the decimal value of Amount - intuition "fraudster might prefer round number or stay away from round numbers. both will be reflected in the Amount variable"
 
-    log_amount - p1log transformation of amount variable to get it to normal distribution
+log_amount - p1log transformation of amount variable to get it to normal distribution
 
 Rest of the variables are masked and hence couldn't be creative with them
 
@@ -18,7 +18,7 @@ Rest of the variables are masked and hence couldn't be creative with them
 
 During initial analyses frauds seems to come in clusters with big spaces in between
 
-![fraud_hm](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/106b8aae-ef30-482a-b7ee-fecb1d003fde)
+![images/fraud_hm](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/106b8aae-ef30-482a-b7ee-fecb1d003fde)
 
 Moving average of frauds across Time
 
@@ -58,24 +58,24 @@ Training a neural network with equal distibution at first and later moving to ac
 
 ### Results with Autoencoder
 
-![loss_ae](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/41f6fd4d-ec32-4dda-83c5-eb1a69b08eaf)
+![images/loss_ae](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/41f6fd4d-ec32-4dda-83c5-eb1a69b08eaf)
 
 Ideally the thresh should be determined from the training data results
 It should be selected in such a way that most of the fraud cases are caught while still keeping the false positives to a minimum.
 
 i.e. maximise the fraud detection while minimising false positives
 
-![threshold_chart](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/e8365eea-b6c7-4a55-8a6a-a3e33720a476)
+![images/threshold_chart](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/e8365eea-b6c7-4a55-8a6a-a3e33720a476)
 
 If we draw a vertical line at any threshold point we get the relevant fraud detection accuracy and the cost (false detection rate)
 
 Since we are sensitive to fraud detection, we might want to capture a lot more fraud cases.
 looking at the graphs 2.8 seems like a good number.
 
-![image-1](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/716fa464-db93-4a62-9143-e847d0082902)
+![images/image-1](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/716fa464-db93-4a62-9143-e847d0082902)
 
 ### results with iForest
 
-![image-3](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/03a8abdd-4a8e-452d-8e64-1cfdf1a3a45d)
+![images/image-3](https://github.com/Lohith-reddy/CreditCardFraud/assets/26896217/03a8abdd-4a8e-452d-8e64-1cfdf1a3a45d)
 
-Though iForest seems to do a good job, it doesn't provide flexibility that autoencoders do. One cannot prioritise fraud detection over false-positives using Iforest.
+Though iForest seems to do a good job, it doesn't provide flexibility that autoencoders do. One cannot prioritise fraud detection over false-positives.
