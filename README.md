@@ -1,5 +1,7 @@
 # Credit Card Fraud Anamoly detection
 
+Practice problem
+
 Class Imbalance: 99.82 - 0.18
 
 ## preprocessing
